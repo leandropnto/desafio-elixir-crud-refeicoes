@@ -8,6 +8,7 @@ defmodule Exmeal.Meals.UpdateTest do
         date: ~D[2001-05-02],
         description: "Banana"
       }
+
       {_ok, meal} = Exmeal.create_meal(params)
 
       response = Exmeal.update_meal(%{"id" => meal.id, "calories" => 25})
@@ -25,7 +26,11 @@ defmodule Exmeal.Meals.UpdateTest do
       id = "a6ef9b39-d638-4835-9ad7-dbe48d1257eb"
       response = Exmeal.update_meal(%{"id" => id})
 
-      assert {:error, %Exmeal.Error{result: "Meal not found", status: :not_found}} = response
+      assert {:error,
+              %Exmeal.Error{
+                result: "Meal a6ef9b39-d638-4835-9ad7-dbe48d1257eb not found!",
+                status: :not_found
+              }} = response
     end
   end
 end

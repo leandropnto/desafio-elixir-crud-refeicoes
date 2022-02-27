@@ -26,7 +26,11 @@ defmodule Exmeal.Meals.GetTest do
       id = "a6ef9b39-d638-4835-9ad7-dbe48d1257eb"
       response = Exmeal.get_meal_by_id(id)
 
-      assert {:error, %Exmeal.Error{result: "Meal not found", status: :not_found}} = response
+      assert {:error,
+              %Exmeal.Error{
+                result: "Meal a6ef9b39-d638-4835-9ad7-dbe48d1257eb not found!",
+                status: :not_found
+              }} = response
     end
   end
 end
