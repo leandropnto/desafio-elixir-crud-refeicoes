@@ -1,0 +1,22 @@
+{
+  "excluded": [],
+  "failed": [],
+  "invalid": [],
+  "passed": [
+    {
+      "describe": "Delete Meal",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal/meals/delete_test.exs",
+      "line": 25,
+      "module": "Elixir.Exmeal.Meals.DeleteTest",
+      "test": "test Delete Meal when an invalid id is given, returns an error"
+    },
+    {
+      "describe": "Delete Meal",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal/meals/delete_test.exs",
+      "line": 5,
+      "module": "Elixir.Exmeal.Meals.DeleteTest",
+      "test": "test Delete Meal when a valid id is given, returns the meal"
+    }
+  ],
+  "skiped": []
+}
