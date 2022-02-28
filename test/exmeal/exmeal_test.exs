@@ -16,5 +16,15 @@ defmodule Exmeal.MealTest do
                valid?: true
              } = response
     end
+
+    test "when any parameter is invalid, then return mapped error" do
+      params = %{description: "Banana", date: "", calories: "20"}
+      response = Meal.changeset(params)
+
+      assert %Changeset{
+               changes: _changes,
+               valid?: false
+             } = response
+    end
   end
 end
