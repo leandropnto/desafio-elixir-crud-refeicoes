@@ -19,7 +19,9 @@ defmodule ExmealWeb.MealsViewTest do
                  calories: 20,
                  date: ~D[2001-05-02],
                  description: "Banana",
-                 id: _id
+                 id: _id,
+                 inserted_at: _inserted_at,
+                 updated_at: _update_at
                }
              },
              message: "Meal created!"
@@ -37,7 +39,9 @@ defmodule ExmealWeb.MealsViewTest do
                calories: 20,
                date: ~D[2001-05-02],
                description: "Banana",
-               id: _id
+               id: _id,
+               inserted_at: _inserted_at,
+               updated_at: _update_at
              }
            } = response
   end

@@ -34,7 +34,7 @@ defmodule ExmealWeb.MealsController do
     with {:ok, %Meal{} = meal} <- Exmeal.get_meal_by_id(id) do
       conn
       |> put_status(:ok)
-      |> render("show.json", meal: meal)
+      |> render("meal.json", meal: meal)
     end
   end
 end

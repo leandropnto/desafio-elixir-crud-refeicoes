@@ -4,10 +4,10 @@ defmodule ExmealWeb.MealsView do
   # import Ecto.Changeset, only: [traverse_errors: 2]
 
   def render("create.json", %{meal: meal}) do
-    %{message: "Meal created!", meal: %{"meal" => meal}}
+    %{message: "Meal created!", meal: %{meal: meal}}
   end
 
-  def render("show.json", %{meal: meal}) do
+  def render("meal.json", %{meal: meal}) do
     %{
       meal: meal
     }
