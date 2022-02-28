@@ -4,18 +4,60 @@
   "invalid": [],
   "passed": [
     {
-      "describe": "Update Meal",
-      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal/meals/update_test.exs",
-      "line": 25,
-      "module": "Elixir.Exmeal.Meals.UpdateTest",
-      "test": "test Update Meal when an invalid id is given, returns an error"
+      "describe": "create/2",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 5,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test create/2 when all params are valid, creates a meal"
     },
     {
-      "describe": "Update Meal",
-      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal/meals/update_test.exs",
-      "line": 5,
-      "module": "Elixir.Exmeal.Meals.UpdateTest",
-      "test": "test Update Meal when a valid id is given, returns the meal"
+      "describe": "update/2",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 95,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test update/2 when not exist id, return an error"
+    },
+    {
+      "describe": "delete/2",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 43,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test delete/2 when id exist, delete the meal"
+    },
+    {
+      "describe": "create/2",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 26,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test create/2 when there are invalid params, returns an error"
+    },
+    {
+      "describe": "delete/2",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 58,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test delete/2 when id not exist, return an error"
+    },
+    {
+      "describe": "get/2",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 130,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test get/2 when id not exist, return an error"
+    },
+    {
+      "describe": "update/2",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 73,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test update/2 when id exist, update the meal"
+    },
+    {
+      "describe": "get/2",
+      "file": "/Users/leandro/Desenvolvimento/Elixir/desafio-elixir-crud-refeicoes/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 108,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test get/2 when id exist, return the meal"
     }
   ],
   "skiped": []

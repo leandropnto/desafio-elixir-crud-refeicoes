@@ -64,7 +64,7 @@ defmodule Exmeal.MealsControllerTest do
         |> json_response(:not_found)
 
       assert %{
-               "message" => "Meal not found"
+               "message" => "Meal 5e694bc0-78fc-4600-bcd0-0733b7540a6e not found!"
              } = response
     end
   end
@@ -100,7 +100,7 @@ defmodule Exmeal.MealsControllerTest do
         |> put(Routes.meals_path(conn, :update, id))
         |> json_response(:not_found)
 
-      assert %{"message" => "Meal not found"} = response
+      assert %{"message" => "Meal 5e694bc0-78fc-4600-bcd0-0733b7540a6e not found!"} = response
     end
   end
 
@@ -135,7 +135,7 @@ defmodule Exmeal.MealsControllerTest do
         |> get(Routes.meals_path(conn, :update, id))
         |> json_response(:not_found)
 
-      assert %{"message" => "Meal not found"} = response
+      assert %{"message" => "Meal 5e694bc0-78fc-4600-bcd0-0733b7540a6e not found!"} = response
     end
   end
 end
